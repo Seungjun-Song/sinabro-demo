@@ -1,0 +1,17 @@
+spring:
+    application:
+        name: be
+    profiles:
+        active: local
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: root
+        url: jdbc:mysql://localhost:3306/sinabro
+        password: ssafy
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+        properties:
+            hibernate:
+                format_sql: 'true'
